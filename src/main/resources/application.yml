@@ -1,0 +1,17 @@
+server:
+  port: 9898
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: file://C:/Users/mayank.kumar1/Downloads/Personal/App-dev/Thela/source/services/config
+  application:
+    name: config-server
+eureka:
+  client:
+    serviceurl:
+      defaultzone: http://localhost:8761/eureka
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
